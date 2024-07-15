@@ -57,7 +57,7 @@ jobs:
 
       - name: Build and push Docker image (no provenance)
         uses: docker/build-push-action@e551b19e49efd4e98792db7592c17c09b89db8d8 # v3.0.0
-        id: build
+        id: build-no-provenance
         with:
           push: true
           context: "{{defaultContext}}:images/echo-server"
